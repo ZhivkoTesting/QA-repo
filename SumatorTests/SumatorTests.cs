@@ -31,4 +31,4 @@ namespace SumatorTests
             Assert.AreEqual(result,3);
         }
     }
-}
+} 
