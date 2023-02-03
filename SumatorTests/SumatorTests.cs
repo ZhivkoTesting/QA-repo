@@ -12,9 +12,8 @@ namespace SumatorTests
             var nums = new[] { 1, 2 };
             var actual = Sumator.Sumator.Sum(nums);
             var expected = 3;
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
-
 
         [Test]
         public void SumThreeNumbers()
@@ -24,11 +23,12 @@ namespace SumatorTests
             var expected = 26;
             Assert.That(actual, Is.EqualTo(expected));
         }
+
         [Test]
         public void ShortSyntax()
         {
             var result = Sumator.Sumator.Sum(new int[] { 1, 2 });
-            Assert.AreEqual(result,3);
+            Assert.That(result, Is.EqualTo(3));
         }
     }
 } 
